@@ -1,0 +1,12 @@
+{
+  "name": "boilerplate-node-express-mongoose",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/wolfzer44/boilerplate-node-express-mongoose.git",
+  "author": "Matheus Oliveira <mattoliveirabsb@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "dotenv": "^6.0.0",
+    "express": "^4.16.3"
+  }
+}
