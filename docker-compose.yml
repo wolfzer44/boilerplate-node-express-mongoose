@@ -1,5 +1,16 @@
 version: "2"
 services:
+  app:
+    container_name: app
+    restart: always
+    build: .
+    volumes: 
+      - ./:/usr/src/app/
+    ports:
+      - ${PORT}:${PORT}
+    links:
+      - mongo
+
   mongo:
     container_name: mongo
     image: mongo
@@ -7,12 +18,5 @@ services:
       - ./data:/data/db
     ports:
       - "${MONGO_PORT}:${MONGO_PORT}"
-  app:
-    container_name: app
-    restart: always
-    build: .
-    ports:
-      - ${PORT}:${PORT}
-    links:
-      - mongo
+  
   
