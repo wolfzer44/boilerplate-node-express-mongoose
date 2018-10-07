@@ -9,6 +9,7 @@ dotenv.config();
 requireDir('./config');
 
 app.use(router);
+app.use(express.json());
 
 app.listen(process.env.PORT, () => {
     console.log(`Server running on: ${process.env.PORT}`);
