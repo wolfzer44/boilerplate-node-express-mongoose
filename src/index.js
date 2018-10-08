@@ -7,7 +7,8 @@ import router  from './routes';
 
 dotenv.config();
 
-// requireDir('./config');
+requireDir('./config');
+requireDir('./models');
 
 app.use(router);
 app.use(express.json());
