@@ -5,7 +5,7 @@ services:
     restart: always
     build: .
     volumes: 
-      - .src/:/usr/src/app/
+      - ./:/usr/src/app/
     ports:
       - ${PORT}:${PORT}
     links:
