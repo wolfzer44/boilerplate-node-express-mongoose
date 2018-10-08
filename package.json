@@ -12,9 +12,13 @@
     "require-dir": "^1.1.0"
   },
   "scripts": {
-    "start": "nodemon app.js"
+    "dev": "nodemon -w ./src --exec \"babel-node ./src --preset env\"",
+    "build": "",
+    "start": ""
   },
   "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-preset-env": "^1.7.0",
     "nodemon": "^1.18.4"
   }
 }
